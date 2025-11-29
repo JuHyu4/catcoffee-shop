@@ -2,7 +2,7 @@
 
 O CatCafé é uma página interativa unindo estética fofa, animações suaves e funcionalidades completas de uma loja virtual fictícia. O projeto apresenta uma experiência divertida e dinâmica, inspirada em arcades japoneses e cafés temáticos de gatinhos.
 
-#  Principais Funcionalidades
+# Funcionalidades
 
 🎀 Design temático com estética de máquina de pegar brinquedos e vidro brilhante.
 
