@@ -8,13 +8,29 @@
     
 </head>
 <body>
+<div id="progress-bar"></div>
+<header class="coffee-header reveal">
+    
+ <nav class="top-menu">
+    <ul>
+        <li><a href="#cafes">Cafés</a></li>
+        <li><a href="#patisserie">Patisserie</a></li>
+        <li><a href="#outros">Outros</a></li>
+    </ul>
+    </nav>
 
-<header class="coffee-header">
+    <section class="coffee-intro reveal">
+    <div class="coffee-title">
+        <h1>Cat Café</h1>
+    </div>
 
-    <!-- BOTÃO DO CARRINHO -->
-    <button id="btnCarrinho" class="btn-carrinho">🛒</button>
+    <div class="coffee-cup">
+        <img src="src/img/xicara-cafe3d.png" alt="Xicara de café 3D" >
+    </div>
+</section>
+<!-- <button id="btnCarrinho" class="btn-carrinho">🛒</button>
 
-    <!-- PAINEL DO CARRINHO -->
+    
      <div id="carrinhoOverlay" class="carrinho-overlay">
 
      </div>
@@ -23,38 +39,36 @@
     <h2>Carrinho</h2>
     <ul id="listaCarrinho"></ul>
     <p class="catcoin-total">Total: 0 🐾 catmoedas</p>
-    </div>
-    
+    </div>  -->
 
-
-    <a href="index.html" class="btn-voltar">Voltar</a>
-    <h1>CatCafe ☕🐱</h1>
-    <p>Escolha seu café — os gatinhos vão preparar!</p>
 </header>
 
-<!-- CARROSSEL DE PROMOÇÕES -->
-<section class="promo-container">
-    <div class="promo-carousel">
-        <div class="promo-card">
-            <img src="src/img/promo1.jpg" alt="Promo Latte">
-            <p>🐾 Compre 2 Lattes e ganhe um biscoitinho grátis!</p>
-        </div>
-        <div class="promo-card">
-            <img src="src/img/promo2.jpg" alt="Cupom Gatinho">
-            <p>😺 Cupom GATINHO10 — 10% OFF!</p>
-        </div>
-        <div class="promo-card">
-            <img src="src/img/promo3.jpg" alt="Mocha Promo">
-            <p>☕✨ Novo Mocha Caramelo Cremoso!</p>
+
+<!-- <main class="Shop"> -->
+
+
+<section class="coffeeshop-container reveal">
+
+    <h1 class="coffee-section-title">Coffee</h1>
+
+    <!-- PROMO -->
+    <div class="promo-container inside">
+        <div class="promo-carousel">
+            <div class="promo-card">
+                <img src="src/img/promo1.jpg">
+                <p>🐾 Compre 2 Lattes e ganhe um biscoitinho grátis!</p>
+            </div>
+            <div class="promo-card">
+                <img src="src/img/promo2.jpg">
+                <p>😺 Cupom GATINHO10 — 10% OFF!</p>
+            </div>
+            <div class="promo-card">
+                <img src="src/img/promo3.jpg">
+                <p>☕✨ Mocha Cremoso!</p>
+            </div>
         </div>
     </div>
-</section>
 
-<!-- CATÁLOGO -->
- <h1 class="coffee-section-title">Coffee</h1>
-<section class="coffeeshop-container">
-
-    <!-- MODELO DE ITEM -->
     <div class="coffee-item">
         <img src="src/img/cat-ppuccino.jpg" alt="">
         <h3>Catpuccino</h3>
@@ -99,27 +113,25 @@
 
 </section>
 
-<section class="promo-container">
-    <div class="promo-carousel">
-        <div class="promo-card">
-            <img src="src/img/promo4.jpg" alt="Promo Latte">
-            <p>🐾 Compre 2 Lattes e ganhe um biscoitinho grátis!</p>
-        </div>
-        <div class="promo-card">
-            <img src="src/img/promo5.jpg" alt="Cupom Gatinho">
-            <p>😺 Cupom GATINHO10 — 10% OFF!</p>
-        </div>
-        <div class="promo-card">
-            <img src="src/img/promo6.jpg" alt="Mocha Promo">
-            <p>☕✨ Novo Mocha Caramelo Cremoso!</p>
+<section class="coffeeshop-container reveal">
+    <h1 class="coffee-section-title">Patisserie</h1>
+    <div class="promo-container inside">
+        <div class="promo-carousel">
+            <div class="promo-card">
+                <img src="src/img/promo1.jpg">
+                <p>🐾 Compre 2 Lattes e ganhe um biscoitinho grátis!</p>
+            </div>
+            <div class="promo-card">
+                <img src="src/img/promo2.jpg">
+                <p>😺 Cupom GATINHO10 — 10% OFF!</p>
+            </div>
+            <div class="promo-card">
+                <img src="src/img/promo3.jpg">
+                <p>☕✨ Mocha Cremoso!</p>
+            </div>
         </div>
     </div>
-</section>
-<h1 class="coffee-section-title">Patiserie</h1>
-<section class="coffeeshop-container">
-    
 
-    <!-- MODELO DE ITEM -->
     <div class="coffee-item">
         <img src="src/img/cat-ppuccino.jpg" alt="">
         <h3>Catpuccino</h3>
@@ -149,83 +161,28 @@
     </div>
 
     <div class="coffee-item">
-        <img src="src/img/cat-ppuccino.jpg" alt="">
-        <h3>Catpuccino</h3>
+        <img src="src/img/icecream-pumpkin.jpg" alt="">
+        <h3>Ice Cream Pumpkin</h3>
         <p>Leite vaporizado com toque suave.</p>
-        <button onclick="adicionarItem('Cappuccino', 12)">Adicionar</button>
+        <button onclick="adicionarItem('Ice Cream Pumpkin', 12)">Adicionar</button>
     </div>
 
     <div class="coffee-item">
-        <img src="src/img/cocoa.jpg" alt="">
-        <h3>Chocolate com Marshmallow</h3>
+        <img src="src/img/macha.jpg" alt="">
+        <h3>Macha</h3>
         <p>Clássico espumado com canela.</p>
-        <button onclick="adicionarItem('Chocolate Quente', 12)">Adicionar</button>
-    </div>
-
-    <div class="coffee-item">
-        <img src="src/img/icecream-mocha.jpg" alt="">
-        <h3>Ice Cream Mocha</h3>
-        <p>Cremoso e gelado.</p>
-        <button onclick="adicionarItem('Cream Mocha', 12)">Adicionar</button>
-    </div>
-
-    <div class="coffee-item">
-        <img src="src/img/frappuccino-ginger.jpg" alt="">
-        <h3>Frappuccino</h3>
-        <p>Shot intenso para energizar.</p>
-        <button onclick="adicionarItem('Frappuccino', 12)">Adicionar</button>
-    </div>
-    <div class="coffee-item">
-        <img src="src/img/cat-ppuccino.jpg" alt="">
-        <h3>Catpuccino</h3>
-        <p>Leite vaporizado com toque suave.</p>
-        <button onclick="adicionarItem('Cappuccino', 12)">Adicionar</button>
-    </div>
-
-    <div class="coffee-item">
-        <img src="src/img/cocoa.jpg" alt="">
-        <h3>Chocolate com Marshmallow</h3>
-        <p>Clássico espumado com canela.</p>
-        <button onclick="adicionarItem('Chocolate Quente', 12)">Adicionar</button>
-    </div>
-
-    <div class="coffee-item">
-        <img src="src/img/icecream-mocha.jpg" alt="">
-        <h3>Ice Cream Mocha</h3>
-        <p>Cremoso e gelado.</p>
-        <button onclick="adicionarItem('Cream Mocha', 12)">Adicionar</button>
-    </div>
-
-    <div class="coffee-item">
-        <img src="src/img/frappuccino-ginger.jpg" alt="">
-        <h3>Frappuccino</h3>
-        <p>Shot intenso para energizar.</p>
-        <button onclick="adicionarItem('Frappuccino', 12)">Adicionar</button>
-    </div>
-
-</section>
-<section class="promo-container">
-    <div class="promo-carousel">
-        <div class="promo-card">
-            <img src="src/img/promo4.jpg" alt="Promo Latte">
-            <p>🐾 Compre 2 Lattes e ganhe um biscoitinho grátis!</p>
-        </div>
-        <div class="promo-card">
-            <img src="src/img/promo5.jpg" alt="Cupom Gatinho">
-            <p>😺 Cupom GATINHO10 — 10% OFF!</p>
-        </div>
-        <div class="promo-card">
-            <img src="src/img/promo6.jpg" alt="Mocha Promo">
-            <p>☕✨ Novo Mocha Caramelo Cremoso!</p>
-        </div>
+        <button onclick="adicionarItem('Macha', 12)">Adicionar</button>
     </div>
 </section>
 
 
+
+<!-- </main> -->
 <footer class="rodape">
     <p>Biblioteca Julyana &copy; 2025</p>
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>

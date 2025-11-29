@@ -1,34 +1,54 @@
+let isScrolling = false;
+let currentSection = 0;
 
-// Som ao abrir menu
-function abrirMenu() {
-    const som = document.getElementById("somMenu");
-    som.currentTime = 0;
-    som.play();
+// Pega TODAS as sections existentes, sem mudar classes
+const sections = document.querySelectorAll("section");
+
+function goToSection(index) {
+    isScrolling = true;
+    currentSection = Math.max(0, Math.min(index, sections.length - 1));
+
+    sections[currentSection].scrollIntoView({
+        behavior: "smooth"
+    });
+
+    setTimeout(() => {
+        isScrolling = false;
+    }, 700);
 }
 
-// Criar páginas internas automaticamente
-const paginas = [
-    { nome: "frontend", titulo: "Front-End" },
-    { nome: "backend", titulo: "Back-End" },
-    { nome: "habilidades", titulo: "Habilidades" }
-];
+window.addEventListener("wheel", (event) => {
+    if (isScrolling) return;
 
-paginas.forEach(p => {
-    const conteudo = `
-        <html>
-        <head><title>${p.titulo}</title></head>
-        <body>
-            <h1>${p.titulo}</h1>
-            <p>Página gerada automaticamente.</p>
-        </body>
-        </html>
-    `;
-
-    const blob = new Blob([conteudo], { type: "text/html" });
-    const url = URL.createObjectURL(blob);
-
-    console.log("Página criada:", p.nome, "→", url);
+    if (event.deltaY > 0) {
+        goToSection(currentSection + 1); // desce
+    } else {
+        goToSection(currentSection - 1); // sobe
+    }
 });
+
+
+
+window.addEventListener("scroll", () => {
+    const progress = document.getElementById("scrollProgress");
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    let progressWidth = (window.scrollY / totalHeight) * 100;
+    progress.style.width = progressWidth + "%";
+});
+
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+        }
+    });
+}, { threshold: 0.3 });
+
+reveals.forEach(el => observer.observe(el));
+
+
 
 // ===================
 // CARRINHO
