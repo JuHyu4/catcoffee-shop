@@ -1,6 +1,6 @@
 # 🐾 ☕ CatCafé – Coffee Shop Interativo com Temática de Gatinhos
 
-O GatCafé é uma página interativa criada como extensão do meu portfólio, unindo estética fofa, animações suaves e funcionalidades completas de uma loja virtual fictícia. O projeto apresenta uma experiência divertida e dinâmica, inspirada em arcades japoneses e cafés temáticos de gatinhos.
+O CatCafé é uma página interativa unindo estética fofa, animações suaves e funcionalidades completas de uma loja virtual fictícia. O projeto apresenta uma experiência divertida e dinâmica, inspirada em arcades japoneses e cafés temáticos de gatinhos.
 
 #  Principais Funcionalidades
 
